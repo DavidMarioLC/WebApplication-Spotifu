@@ -1,0 +1,41 @@
+.menuItem {
+}
+
+.menuItem a {
+  display: block;
+  font: var(--button);
+  padding-inline-start: 1.5rem;
+  padding-inline-end: 1.5rem;
+
+  block-size: 2.5rem;
+  line-height: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.menuItem a:hover {
+  text-decoration: none;
+}
+
+.menuItem [class^="icon-"] {
+  font-size: 1.5rem;
+}
+
+.menuItem.is-active a {
+  color: var(--whiteColor);
+  box-shadow: inset 4px 0 0 var(--primaryColor);
+}
+
+.menuItem.is-active .icon-home::before {
+  content: "\e90a";
+}
+
+.menuItem.is-active .icon-search::before {
+  content: "\e914";
+}
+
+/* 
+--no tiene version active--
+.menuItem.is-active .icon-creditCard::before {
+  content: "\e90a";
+} */

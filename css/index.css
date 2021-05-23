@@ -1,0 +1,48 @@
+@import "./icons.css";
+@import "./fonts.css";
+@import "./body.css";
+@import "./link.css";
+@import "./button-icon.css";
+@import "./logo.css";
+@import "./list.css";
+@import "./menu.css";
+@import "./sidebar.css";
+@import "./ellipsis.css";
+@import "./player.css";
+@import "./page.css";
+@import "./scrollbar.css";
+@import "./table.css";
+@import "./infoArtist.css";
+@import "./buttonText.css";
+@import "./text.css";
+@import "./filter.css";
+@import "./playlist-cover.css";
+:root {
+  --primaryColor: #00b050;
+  --whiteColor: #ffffff;
+  --gray10Color: #b3b3b3;
+  --gray20Color: #737373;
+  --gray30Color: #282828;
+  --gray40Color: #181818;
+  --gray50Color: #121212;
+  --gray60Color: #000000;
+  --baseFontFamily: Avenir, Helvetica, sans-serif;
+  --headLine1: bold 2rem / normal var(--baseFontFamily);
+  --headLine2: bold 1.5rem/1.75rem var(--baseFontFamily);
+  --baseFont: normal 0.875em/1.375rem var(--baseFontFamily);
+  --baseFontBold: bold 0.875em/1.375rem var(--baseFontFamily);
+  --button: bold 0.875rem/1.375rem var(--baseFontFamily);
+  --small: normal 0.75em / normal var(--baseFontFamily); /*em*/
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1367px) {
+  :root {
+    font-size: 18px;
+  }
+}

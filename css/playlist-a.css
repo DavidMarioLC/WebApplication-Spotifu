@@ -1,0 +1,58 @@
+.playlistA {
+  /*esto nos permite escalar el contenido segun el size del texto*/
+  inline-size: 13em;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  background: var(--gray40Color);
+  /* aplicamos para evitar restar el inline-suize - padding */
+  box-sizing: border-box;
+  transition: 0.3s background;
+  flex-shrink: 0;
+  /* link-ancla */
+  position: relative;
+}
+.playlistA:hover,
+.playlistA:focus-within {
+  background: var(--gray30Color);
+  cursor: pointer;
+}
+
+.playlistA:hover .playlistA-cover button,
+.playlistA:focus-within .playlistA-cover button {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.playlistA-cover img {
+  vertical-align: middle;
+  inline-size: 100%;
+  block-size: auto;
+}
+
+.playlistA-cover {
+  position: relative;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  margin-block-end: 1rem;
+}
+
+.playlistA button {
+  position: absolute;
+  right: 0.5rem;
+  bottom: 0.5rem;
+  opacity: 0;
+  transform: translateY(0.5rem);
+  will-change: opacity, transform;
+  transition: 0.3s opacity, 0.3s transform;
+}
+
+.playlistA-title {
+  font: var(--baseFontBold);
+  color: var(--whiteColor);
+  margin: 0;
+}
+
+.playlistA-description {
+  font: var(--baseFont);
+  margin: 0;
+}

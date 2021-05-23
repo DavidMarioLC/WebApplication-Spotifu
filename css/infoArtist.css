@@ -1,0 +1,9 @@
+.infoArtist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  block-size: 250px;
+}
+.infoArtist-content {
+  text-align: center;
+}

@@ -1,0 +1,45 @@
+:root {
+  --sidebarInlineSize: 15rem;
+  --minBlockSize: 30.5rem;
+  --minInlineSize: 48rem;
+  --bottonSize: 5.5rem;
+}
+
+.layout {
+  min-inline-size: var(--minInlineSize);
+}
+
+.layout-sidebar {
+  block-size: calc(100vh - var(--bottonSize));
+  min-block-size: var(--minBlockSize);
+  inline-size: var(--sidebarInlineSize);
+  overflow: auto;
+  flex-shrink: 0;
+  background: var(--gray60Color);
+}
+
+.layout-main {
+  block-size: calc(100vh - var(--bottonSize));
+  min-block-size: var(--minBlockSize);
+  overflow: auto;
+  width: 100%;
+}
+
+.layout-main.background-main {
+  background: linear-gradient(
+      181.17deg,
+      rgba(47, 47, 47, 0) -35.3%,
+      #171717 66.2%
+    ),
+    url("../images/background-main.png") no-repeat center;
+  background-size: cover;
+}
+
+.layout-bottom {
+  flex: 1;
+  block-size: var(--bottonSize);
+}
+
+.layout-block {
+  display: flex;
+}

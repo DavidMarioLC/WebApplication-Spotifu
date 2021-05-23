@@ -1,0 +1,52 @@
+.contentTable {
+}
+
+.table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+.table-header th {
+  font-weight: normal;
+  font-size: 12px;
+  padding: 0 0.5rem;
+}
+
+.table-header th [class^="icon-"] {
+  font-size: 1.125rem;
+  color: var(--gray10Color);
+}
+
+.table-row td {
+  color: var(--whiteColor);
+  font-size: 0.78rem;
+  line-height: 22px;
+  padding: 0 0.5rem;
+}
+.table-row:hover {
+  background: rgba(255, 255, 255, 0.2);
+  font-size: 0.78rem;
+  line-height: 22px;
+}
+
+.table-row td:nth-child(5),
+.table-row td:nth-child(6) {
+  color: var(--gray10Color);
+  font-size: 0.78rem;
+  line-height: 22px;
+}
+
+.table-row td [class^="icon-"] {
+  font-size: 0.8rem;
+  color: var(--whiteColor);
+}
+
+.col-icon {
+  width: 5rem;
+}
+
+.col-icon .buttonIcon + .buttonIcon i {
+  font-size: 1.125rem;
+  margin-left: 1rem;
+}
